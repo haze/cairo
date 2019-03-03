@@ -1,0 +1,20 @@
+[package]
+name = "cairo"
+version = "0.0.1"
+authors = ["haze <isnt@haze.cool>"]
+edition = "2018"
+
+[dependencies]
+colored = "1.7"
+chrono = "0.4.6"
+handlebars = "1.1.0"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+serde_json = "1.0.39"
+
+[dependencies.clap]
+version = "2.32.0"
+default-features = false
+
+# Cherry-pick the features you'd like to use
+features = [ "suggestions", "color", "wrap_help" ]
